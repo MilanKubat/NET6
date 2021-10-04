@@ -56,14 +56,19 @@ namespace AhojSvete
 
         static void Teploty()
         {
-            double stF,stC;
             Console.WriteLine("Převod teploty");
             Console.WriteLine("--------------");
             Console.WriteLine();
             Console.WriteLine("Zadej teplotu ve °F:");
-            stF = double.Parse(Console.ReadLine());
-            stC = (stF - 32) * 5 / 9;
-            Console.WriteLine($"Tak to je ve °C: {stC}");
+            
+            
+            Console.WriteLine($"Tak to je ve °C: {PrevodTeplot( Console.ReadLine())}");
+        }
+
+        static double PrevodTeplot(string stFtext)
+        {
+            double stF = double.Parse(stFtext);
+            return (stF - 32) * 5 / 9;
         }
     }
 }
