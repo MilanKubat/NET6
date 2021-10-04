@@ -34,7 +34,9 @@ namespace AhojSvete
 
         static int Porovnej(int a, int b)
         {
-            if (a > b)
+            if (a == 155 || a == 255)
+                return b;
+            else if (a > b)
             { 
                 return a; 
             }
