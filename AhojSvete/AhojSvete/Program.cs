@@ -9,7 +9,10 @@ namespace AhojSvete
             Console.WriteLine("Hello World!");
             Console.WriteLine();
             SoucetATisk(5, 46);
-            Pozdrav("Milane");
+            Console.WriteLine("Jméno v 5. pádě:");
+            var jmeno = Console.ReadLine();
+
+            Pozdrav(jmeno);
 
             int a = -20;
             int b = 30;
@@ -18,7 +21,7 @@ namespace AhojSvete
             b = a - b;
             a = a - b;
             Console.WriteLine($"{a}, {b}");
-
+            //Console.BackgroundColor = Consolecolor.
             Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );
         }
 
@@ -29,7 +32,10 @@ namespace AhojSvete
 
         static void Pozdrav(string Jmeno)
         {
-            Console.WriteLine($"Zdravím tě, {Jmeno}!");
+            if (Jmeno == "Milane")
+                Console.WriteLine($"Vítej zpátky, {Jmeno}!");
+            else
+                Console.WriteLine($"Zdravím tě, {Jmeno}!");
         }
 
         static int Porovnej(int a, int b)
