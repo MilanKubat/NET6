@@ -11,7 +11,7 @@ namespace AhojSvete
             SoucetATisk(5, 46);
             Pozdrav("Milane");
 
-            int a = 20;
+            int a = -20;
             int b = 30;
             Console.WriteLine($"{a}, {b}");
             a = a + b;
@@ -19,6 +19,7 @@ namespace AhojSvete
             a = a - b;
             Console.WriteLine($"{a}, {b}");
 
+            Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );
         }
 
         static void SoucetATisk (int a, int b)
@@ -29,6 +30,18 @@ namespace AhojSvete
         static void Pozdrav(string Jmeno)
         {
             Console.WriteLine($"Zdravím tě, {Jmeno}!");
+        }
+
+        static int Porovnej(int a, int b)
+        {
+            if (a > b)
+            { 
+                return a; 
+            }
+            else
+            {     
+                return b;
+            }
         }
     }
 }
