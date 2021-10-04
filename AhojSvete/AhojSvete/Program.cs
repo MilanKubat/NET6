@@ -10,6 +10,16 @@ namespace AhojSvete
             Console.WriteLine();
             SoucetATisk(5, 46);
             Pozdrav("Milane");
+
+            int a = 20;
+            int b = 30;
+            Console.WriteLine($"{a}, {b}");
+            int c;
+            c = a;
+            a = b;
+            b = c;
+            Console.WriteLine($"{a}, {b}");
+
         }
 
         static void SoucetATisk (int a, int b)
