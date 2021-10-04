@@ -9,10 +9,12 @@ namespace AhojSvete
             Console.WriteLine("Hello World!");
             Console.WriteLine();
             SoucetATisk(5, 46);
-            Console.WriteLine("Jméno v 5. pádě:");
-            var jmeno = Console.ReadLine();
+            //Console.WriteLine("Jméno v 5. pádě:");
+            //var jmeno = Console.ReadLine();
 
-            Pozdrav(jmeno);
+            //Pozdrav(jmeno);
+
+            Teploty();
 
             int a = -20;
             int b = 30;
@@ -21,7 +23,7 @@ namespace AhojSvete
             b = a - b;
             a = a - b;
             Console.WriteLine($"{a}, {b}");
-            //Console.BackgroundColor = Consolecolor.
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );
         }
 
@@ -50,6 +52,18 @@ namespace AhojSvete
             {     
                 return b;
             }
+        }
+
+        static void Teploty()
+        {
+            double stF,stC;
+            Console.WriteLine("Převod teploty");
+            Console.WriteLine("--------------");
+            Console.WriteLine();
+            Console.WriteLine("Zadej teplotu ve °F:");
+            stF = double.Parse(Console.ReadLine());
+            stC = (stF - 32) * 5 / 9;
+            Console.WriteLine($"Tak to je ve °C: {stC}");
         }
     }
 }
