@@ -14,10 +14,9 @@ namespace AhojSvete
             int a = 20;
             int b = 30;
             Console.WriteLine($"{a}, {b}");
-            int c;
-            c = a;
-            a = b;
-            b = c;
+            a = a + b;
+            b = a - b;
+            a = a - b;
             Console.WriteLine($"{a}, {b}");
 
         }
