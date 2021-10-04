@@ -8,7 +8,7 @@ namespace AhojSvete
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine();
-            SoucetATisk(5, 46);
+            //SoucetATisk(5, 46);
             //Console.WriteLine("Jméno v 5. pádě:");
             //var jmeno = Console.ReadLine();
 
@@ -16,7 +16,7 @@ namespace AhojSvete
 
             Teploty();
 
-            int a = -20;
+            /*int a = -20;
             int b = 30;
             Console.WriteLine($"{a}, {b}");
             a = a + b;
@@ -24,7 +24,7 @@ namespace AhojSvete
             a = a - b;
             Console.WriteLine($"{a}, {b}");
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );
+            Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );*/
         }
 
         static void SoucetATisk (int a, int b)
