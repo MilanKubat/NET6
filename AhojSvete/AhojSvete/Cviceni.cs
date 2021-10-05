@@ -58,11 +58,15 @@ namespace AhojSvete
         static public void Cykly()
         {
             int cislo = 0;
-            while (cislo == cislo / 2 * 2)
+
+            Console.WriteLine("Zadej číslo");
+            cislo = int.Parse(Console.ReadLine());
+            while (cislo % 2 != 0)
             {
+                Console.WriteLine(cislo);
                 Console.WriteLine("Zadej číslo");
                 cislo = int.Parse(Console.ReadLine());
-                Console.WriteLine(cislo);
+                
             }
 
         }
