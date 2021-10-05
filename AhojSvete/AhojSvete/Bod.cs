@@ -32,6 +32,10 @@ namespace AhojSvete
             return "BOD:" + "\t" + X + "\t" + Y;
         }
 
+        /// <summary>
+        /// Vrátí obsah čtyřúhelníku, který je daný bodem 0,0 a bodem X,Y
+        /// </summary>
+        /// <returns>float</returns>
         public float Obsah()
         {
             return Math.Abs(X * Y);

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace AhojSvete
 {
@@ -42,12 +44,23 @@ namespace AhojSvete
             Console.WriteLine(O1);
             Console.WriteLine(O2);
 
-            Bod B1 = new Bod(10, 20);
-            Console.WriteLine(B1);
+            Bod B1 = new Bod(-10, 20);
+            Console.WriteLine($"Obsah 4úhelníku 0,0 a {B1.X},{B1.Y} je {B1.Obsah()}");
 
+            List<Osoba> Lide = new List<Osoba>();
+            Lide.Add(O1);
+            Lide.Add(O2);
 
+            Console.WriteLine();
+            
 
+            Console.WriteLine("Osoby v souboru");
+            foreach (Osoba clovek in Lide) File.AppendAllText("osoby.txt",clovek.ToString()+Environment.NewLine);
 
+            List<Osoba> Lide2 = new List<Osoba>();
+
+            string[] radkysouboru =File.ReadAllLines("osoby.txt");
+            foreach (string radek)
         }
 
         static void SoucetATisk (int a, int b)
