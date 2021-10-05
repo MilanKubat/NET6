@@ -54,13 +54,21 @@ namespace AhojSvete
             Console.WriteLine();
             
 
-            Console.WriteLine("Osoby v souboru");
+            Console.WriteLine("Zapis osob do souboru");
             foreach (Osoba clovek in Lide) File.AppendAllText("osoby.txt",clovek.ToString()+Environment.NewLine);
 
             List<Osoba> Lide2 = new List<Osoba>();
 
             string[] radkysouboru =File.ReadAllLines("osoby.txt");
-            foreach (string radek)
+            foreach (string radek in radkysouboru)
+            {
+                string[] udaje = radek.Split("\t\t".ToCharArray());
+                Lide2.Add(new Osoba(udaje[0], udaje[2], int.Parse(udaje[4])));
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Osoby v souboru");
+            foreach (Osoba clovek in Lide) Console.WriteLine(clovek);
         }
 
         static void SoucetATisk (int a, int b)
