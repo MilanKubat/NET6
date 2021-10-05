@@ -9,6 +9,12 @@ namespace AhojSvete
     class Bod
     {
         //KONSTRUKTORY
+        public Bod()
+        {
+            X = 100;
+            Y = 100;
+        }
+
         public Bod (float x, float y)
         {
             X = x;
@@ -28,7 +34,7 @@ namespace AhojSvete
 
         public float Obsah()
         {
-            return X * Y;
+            return Math.Abs(X * Y);
         }
 
     }
