@@ -2,7 +2,7 @@
 
 namespace AhojSvete
 {
-    class Program
+    class Program : TeplotyClass
     {
         static void Main(string[] args)
         {
@@ -14,8 +14,8 @@ namespace AhojSvete
 
             //Pozdrav(jmeno);
 
-            Teploty();
-
+            //TeplotyClass.Teploty();
+            Cviceni.Generace();
             /*int a = -20;
             int b = 30;
             Console.WriteLine($"{a}, {b}");
@@ -52,23 +52,6 @@ namespace AhojSvete
             {     
                 return b;
             }
-        }
-
-        static void Teploty()
-        {
-            Console.WriteLine("Převod teploty");
-            Console.WriteLine("--------------");
-            Console.WriteLine();
-            Console.WriteLine("Zadej teplotu ve °F:");
-            
-            
-            Console.WriteLine($"Tak to je ve °C: {PrevodTeplot( Console.ReadLine())}");
-        }
-
-        static double PrevodTeplot(string stFtext)
-        {
-            double stF = double.Parse(stFtext);
-            return (stF - 32) * 5 / 9;
         }
     }
 }
