@@ -9,15 +9,26 @@ namespace AhojSvete
     class Bod
     {
         //KONSTRUKTORY
+        public Bod (float x, float y)
+        {
+            X = x;
+            Y = y;
+        }
         
         //ATRIBUTY
         public float X { get; set; }
         public float Y { get; set; }
 
+
         //METODY
         public override string ToString()
         {
-            return X + "\t" + Y;
+            return "BOD:" + "\t" + X + "\t" + Y;
+        }
+
+        public float Obsah()
+        {
+            return X * Y;
         }
 
     }

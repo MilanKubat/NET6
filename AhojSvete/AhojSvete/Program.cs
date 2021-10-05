@@ -42,6 +42,9 @@ namespace AhojSvete
             Console.WriteLine(O1);
             Console.WriteLine(O2);
 
+            Bod B1 = new Bod(10, 20);
+            Console.WriteLine(B1);
+
 
 
 
