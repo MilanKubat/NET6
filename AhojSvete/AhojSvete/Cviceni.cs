@@ -45,10 +45,8 @@ namespace AhojSvete
                     den = "Pátek";
                     break;
                 case 6:
-                    den = "Sobota";
-                    break;
                 case 7:
-                    den = "Neděle";
+                    den = "VOLNO!";
                     break;
                 default:
                     den = "Takový den neexistuje!";
