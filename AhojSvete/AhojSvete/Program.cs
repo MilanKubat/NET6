@@ -18,8 +18,8 @@ namespace AhojSvete
             //Cviceni.Generace();
             //Cviceni.Dny();
             //Cviceni.Cykly();
-            Cviceni.SoucetRady();
-
+            //Cviceni.SoucetRady();
+            
             /*int a = -20;
             int b = 30;
             Console.WriteLine($"{a}, {b}");
@@ -29,6 +29,22 @@ namespace AhojSvete
             Console.WriteLine($"{a}, {b}");
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"{a}, {b} větší je: {Porovnej(a,b)}" );*/
+            
+            
+            
+            Osoba O1 = new Osoba();
+            Osoba O2 = new Osoba("Alice", "Nováková",36);
+
+            O1.Jmeno = "Adam";
+            O1.Prijmeni = "Novák";
+            O1.Vek = 30;
+
+            Console.WriteLine(O1);
+            Console.WriteLine(O2);
+
+
+
+
         }
 
         static void SoucetATisk (int a, int b)
