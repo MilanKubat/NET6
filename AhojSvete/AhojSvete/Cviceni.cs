@@ -70,5 +70,12 @@ namespace AhojSvete
             }
 
         }
+
+        static public void SoucetRady()
+        {
+            Console.WriteLine("Zadej číslo");
+            int cislo = int.Parse(Console.ReadLine());
+            Console.WriteLine((0.5+(double)cislo/2)*cislo);
+        }
     }
 }
