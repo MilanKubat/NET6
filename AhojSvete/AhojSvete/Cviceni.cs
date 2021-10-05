@@ -54,5 +54,17 @@ namespace AhojSvete
             }
             Console.WriteLine($"{cislo} odpovídá dnu v týdnu: {den}");
         }
+
+        static public void Cykly()
+        {
+            int cislo = 0;
+            while (cislo == cislo / 2 * 2)
+            {
+                Console.WriteLine("Zadej číslo");
+                cislo = int.Parse(Console.ReadLine());
+                Console.WriteLine(cislo);
+            }
+
+        }
     }
 }
